@@ -18,13 +18,11 @@ function App() {
           Learn React with abe, coff and nike
           we learn lots of stuff yaesss
           Hi my name is nike this is me :)
-          PENIS
         </a>
       </header>
     </div>
   );
 }
-
 window.addEventListener('load',function(){
   fetch('https://fakestoreapi.com/products')
             .then(res=>res.json())
