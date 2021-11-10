@@ -18,7 +18,7 @@ function App() {
           Learn React with abe, coff and nike
           we learn lots of stuff yaesss
           Hi my name is nike this is me :)
-          hi evz
+          PENIS
         </a>
       </header>
     </div>
