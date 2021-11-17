@@ -1,11 +1,9 @@
 import logo from './logo.svg';
-import './App.css';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
@@ -26,7 +24,15 @@ function App() {
 window.addEventListener('load',function(){
   fetch('https://fakestoreapi.com/products')
             .then(res=>res.json())
-            .then(json=>console.log(json))
+            .then(data=>{
+              console.log(data);
+              let count =0;
+              Object.keys(data).forEach(elements=>{
+                count++;
+                //console.log(count);
+                return <img src={data.count.image} alt="en bild"></img>
+              });
+            });
 });
 
 export default App;
